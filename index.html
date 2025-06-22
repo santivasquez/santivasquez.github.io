@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -15,10 +16,34 @@
     the `--base-href` argument provided to `flutter build`.
   -->
   <base href="/">
-  <meta name="google-signin-client_id" content="448161361563-a87ganvosqticm6ppmqdpbhnq4p1brsi.apps.googleusercontent.com">
+  <meta name="google-signin-client_id"
+    content="448161361563-a87ganvosqticm6ppmqdpbhnq4p1brsi.apps.googleusercontent.com">
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Visita nuestra Tienda Virtual">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <!-- <meta property="og:url" content="https://teregalo.com/"> -->
+  <meta property="og:title" content="ecommerce">
+  <meta property="og:description" content="Visita nuestra Tienda Virtual">
+  <!-- <meta property="og:image" content="https://teregalo.com/icons/Icon-512.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512"> -->
+  <meta property="og:site_name" content="Juliana Duque Pasteleria">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <!-- <meta property="twitter:url" content="https://teregalo.com/"> -->
+  <meta property="twitter:title" content="ecommerce">
+  <meta property="twitter:description" content="Visita nuestra Tienda Virtual">
+  <!-- <meta property="twitter:image" content="https://teregalo.com/icons/Icon-512.png"> -->
+
+  <!-- Additional SEO meta tags -->
+  <meta name="keywords" content="regalos, tienda online, productos únicos, sorpresas, celebraciones, postres">
+  <meta name="author" content="Madio-express">
+  <meta name="robots" content="index, follow">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -27,45 +52,46 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-  <title>te_regalo</title>
+  <title>Te Regalo - El regalo perfecto para cada ocasión</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    const serviceWorkerVersion = "3708234597";
+    const serviceWorkerVersion = "1728723072";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
+
 <body>
   <!-- <script src="main.dart.js?version=2" type="application/javascript" ></script> -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script> 
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script> 
-  
-  <script> 
-    const firebaseConfig = { 
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+
+  <script>
+    const firebaseConfig = {
       apiKey: "AIzaSyAR2vtl3GLEqRn4TZIt0hohStATwEZdYm8",
-          projectId: "madio-express",
-          messagingSenderId: "448161361563",
-          appId: "1:448161361563:web:58b74860311ff11bb5e03e",
-    }; 
-  
+      projectId: "madio-express",
+      messagingSenderId: "448161361563",
+      appId: "1:448161361563:web:58b74860311ff11bb5e03e",
+    };
+
     //const app = initializeApp(firebaseConfig); 
     //const analytics = getAnalytics(app); 
-    
+
   </script>
-  
+
   <script>
-    window.addEventListener('load', function(ev) {
+    window.addEventListener('load', function (ev) {
       // Download main.dart.js
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
         },
-        onEntrypointLoaded: function(engineInitializer) {
-          engineInitializer.initializeEngine().then(function(appRunner) {
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
             appRunner.runApp();
           });
         }
@@ -73,4 +99,5 @@
     });
   </script>
 </body>
+
 </html>
